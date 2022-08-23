@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
+.sidebar {
+    background-color: rgb(140, 140, 250);
+    width: 150px;
+    font-family: 'Hind Madurai', sans-serif;
+    height: 102vh;
+    border-radius: -2px;
+    font-weight: 1px5;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.sidebar:hover {
+    transform: scale(1.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    /*background-color: black;*/
+    width: 90vw;
+    font-family: 'Dosis', sans-serif;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 22px 0;
+
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar nav {
+    padding: 40px;
+}
+
+.infocontainer {
+    height: 70vh;
+    width: 80vw;
+    margin: 130px auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.devpic img {
+    height: 80vh;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 60px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.about {
+    font-size: 35px;
+    font-weight: 33px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.button button {
+    padding: 3px 5px;
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 90px;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(159, 215, 164);
+    font-weight: 500;
+    margin: 0 3px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.moreabout {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 23px;
+}
+
+.button {
+    margin-top: 64px;
+}
+
+.button button:hover {
+    color: black;
+    background-color: white;
+}
+
+.contact {
+    margin: 13px;
+    padding: 13px;
+    padding-top: 13px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contactform h1 {
+    margin-top: 22px 0;
+    padding: 22px;
+    text-align: left;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.submit {
+    padding: 9px 12px;
+    font-size: 14px;
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 90px;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(159, 215, 164);
+    margin: 15px;
+}
+
+.submit:hover {
+    color: black;
+    background-color: white;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgb(11, 11, 11);
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 15px;
+    color: blue;
+    margin: 0 5px;
+
+}
+
+#phonehelp {
+    font-size: 15px;
+    color: blue;
+    margin: 0 5px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 13px;
+    margin: 6px 0;
+}
+
+#nameHelp {
+    font-size: 15px;
+    color: blue;
+    margin: 0 5px;
+
+}
+
+.blog {
+    font-size: 20px;
+    margin: 20px;
+    padding: 43px;
+}
+
+.blogcontainer h1 {
+    margin: 20px;
+    font-size: 40px;
+
+}
+
+.wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 9px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 60%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+}
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background-color: rgb(85, 85, 197);
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+}
+
+.hh {
+    font-size: 33px;
+    background-color: rgb(140, 140, 250);
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    padding-top: 1px;
+
+}
+
+footer {
+    padding: 21px;
+    text-align: center;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.about {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title {
+    text-align: center;
+    padding: 29px;
+    margin-left: 1vw;
+    font-weight: 53px;
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 170px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+
+
+.about .about-content .left img {
+    height: 370px;
+    width: 310px;
+    object-fit: cover;
+    margin-left: 22px;
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.about .about-content .right {
+    width: 79%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+.about .about-content .right p {
+    text-align: center;
+    font-size: 19px;
+}
+
+.about .about-content .column {
+    width: 50%;
+}
+
+.about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 50px;
+}
+
+.about .about-content .right {
+    flex: 50%;
+}
+
+.services {
+    background: #111;
+    color: white;
+}
+
+.services .title {
+    text-align: center;
+    padding: 29px;
+    margin-left: 1vw;
+    font-weight: 53px;
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.services .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 170px;
+    height: 3px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.services .title::after {
+    content: "what i provide";
+    position: absolute;
+    font-weight: 93px;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+.services .services-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.services .services-content .card {
+    width: calc(30% - 15px);
+    background: #333;
+    text-align: center;
+    border-radius: 9px;
+    padding: 19px 21px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card {
+    width: calc(29% - 10px);
+    margin-bottom: 10px;
+}
+
+.services .services-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.services .services-content .right p {
+    text-align: center;
+    font-size: 19px;
+}
+
+.services .services-content .column {
+    width: 90%;
+}
+
+.services .services-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 50px;
+}
+
+.services .services-content .right {
+    flex: 50%;
+}
+
+.services .services-content .card i {
+    font-size: 20px;
+    color: red;
+    transition: color 0.3s ease;
+}
+
+.services .services-content .card:hover i {
+    color: white;
+}
+
+.services .services-content .card .text {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 9px 0 6px 0;
+}
+
+.services .services-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .services-content .card:hover {
+    background: crimson;
+}
+
+@media (max-width: 12450) {
+    .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+}
+
+.blog .title {
+    text-align: center;
+    padding: 29px;
+    margin-left: 1vw;
+    font-weight: 53px;
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.blog .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 170px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+
+
+.social {
+    color: crimson;
+    font-weight: 100vw;
+    font-size: 23px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.infocontainer .devinfo .about span {
+    color: crimson;
+    font-weight: 43px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
